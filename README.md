@@ -1,2 +1,2 @@
 # plataforma
-Plataforma de monitoramento oncológico
+Plataforma de monitoramento de pacientes oncológicos
