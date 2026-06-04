@@ -1,287 +1,183 @@
-# OncoCare+
+# OncoCare+ Frontend
 
-### Plataforma Inteligente para Monitoramento Pós-Tratamento Oncológico no SUS
+## Sobre o Projeto
 
-## 📌 Sobre o projeto
+O OncoCare+ é uma plataforma digital voltada ao monitoramento multidimensional de pacientes oncológicos no período pós-tratamento, com foco inicial em câncer de mama e câncer de colo do útero.
 
-O **OncoCare+** é uma plataforma digital inteligente voltada ao acompanhamento multidimensional de mulheres em pós-tratamento oncológico de câncer de mama e câncer de colo do útero.
+A proposta do sistema é apoiar equipes multiprofissionais na identificação precoce de sinais de agravamento clínico, alterações funcionais e impactos na qualidade de vida, utilizando indicadores clínicos, exames laboratoriais, avaliações de sintomas e medidas de composição corporal por bioimpedância.
 
-O projeto foi desenvolvido com foco na continuidade do cuidado no SUS, integrando avaliação funcional, nutricional, sintomática e psicossocial através de questionários clínicos, bioimpedância e estratificação automatizada de criticidade clínica.
-
-A proposta busca auxiliar equipes multiprofissionais na identificação precoce de complicações, melhora da adesão ao seguimento clínico e priorização assistencial baseada em risco.
+O projeto está sendo desenvolvido como MVP para validação de conceito, experiência do usuário e arquitetura da solução.
 
 ---
 
-# 🎯 Problema
+## Objetivos
 
-Pacientes oncológicas em pós-tratamento frequentemente apresentam:
-
-* perda de seguimento clínico;
-* baixa adesão ao acompanhamento longitudinal;
-* sintomas tardios subnotificados;
-* sarcopenia e alterações nutricionais;
-* sofrimento emocional;
-* dificuldade de monitoramento contínuo pela equipe de saúde.
-
-Além disso, os serviços públicos enfrentam sobrecarga assistencial e dificuldade de priorização baseada em criticidade clínica.
+* Centralizar informações clínicas relevantes para o acompanhamento pós-tratamento.
+* Facilitar a identificação de pacientes com maior risco de complicações.
+* Estruturar avaliações multidimensionais de saúde.
+* Apoiar a tomada de decisão clínica através de indicadores visuais e alertas.
+* Promover o monitoramento longitudinal da evolução do paciente.
 
 ---
 
-# 💡 Solução proposta
+## Público-Alvo
 
-O OncoCare+ propõe um ecossistema digital composto por:
+### Profissionais de Saúde
 
-* aplicativo para pacientes;
-* dashboard profissional;
-* monitoramento remoto contínuo;
-* questionários clínicos estruturados;
-* análise multidimensional;
-* alertas automatizados;
-* score de criticidade clínica.
+* Médicos
+* Enfermeiros
+* Fisioterapeutas
+* Nutricionistas
+* Equipes multiprofissionais de oncologia
 
-A plataforma permite acompanhamento longitudinal de pacientes oncológicas após tratamentos como:
+### Pacientes Oncológicos
 
-* quimioterapia;
-* radioterapia;
-* braquiterapia;
-* cirurgia;
-* hormonioterapia;
-* imunoterapia.
+Em fases de acompanhamento após o tratamento de câncer de mama e câncer de colo do útero.
 
 ---
 
-# 🧠 Diferenciais do projeto
+## Tecnologias
 
-✅ Monitoramento multidimensional
-✅ Integração com bioimpedância
-✅ Estratificação automática de risco
-✅ Foco em pós-tratamento oncológico
-✅ Aplicabilidade no SUS
-✅ Apoio à tomada de decisão clínica
-✅ Avaliação funcional, nutricional e psicossocial integrada
-✅ Monitoramento contínuo da qualidade de vida
+### Frontend
 
----
-
-# 👩‍⚕️ Público-alvo
-
-## Pacientes
-
-* Mulheres diagnosticadas com:
-
-  * câncer de mama;
-  * câncer de colo do útero.
-
-## Profissionais de saúde
-
-* médicos;
-* enfermeiros;
-* fisioterapeutas;
-* nutricionistas;
-* equipes multiprofissionais da oncologia.
-
----
-
-# 🏥 Aplicabilidade no SUS
-
-O projeto foi idealizado para utilização em:
-
-* ambulatórios oncológicos;
-* CACONs;
-* UNACONs;
-* hospitais;
-* clínicas;
-* atenção especializada;
-* programas de telessaúde.
-
----
-
-# 📊 Funcionalidades principais
-
-## Para pacientes
-
-* Check-in semanal de saúde;
-* Registro de sintomas;
-* Avaliação de qualidade de vida;
-* Alertas clínicos;
-* Acompanhamento longitudinal;
-* Orientações terapêuticas.
-
-## Para profissionais
-
-* Dashboard clínico;
-* Lista de pacientes prioritários;
-* Visualização de evolução clínica;
-* Alertas automatizados;
-* Estratificação de criticidade;
-* Histórico de avaliações.
-
----
-
-# 🧬 Variáveis clínicas monitoradas
-
-## Dimensão funcional
-
-* fadiga;
-* mobilidade;
-* capacidade funcional;
-* força muscular.
-
-## Dimensão nutricional
-
-* bioimpedância;
-* perda de peso;
-* ingestão alimentar;
-* risco de sarcopenia.
-
-## Dimensão sintomática
-
-* dor;
-* neuropatia;
-* sintomas gastrointestinais;
-* sintomas urinários;
-* edema.
-
-## Dimensão psicossocial
-
-* ansiedade;
-* depressão;
-* adesão terapêutica;
-* suporte familiar;
-* qualidade de vida.
-
----
-
-# ⚠️ Score de criticidade clínica
-
-A plataforma utiliza variáveis clínicas para gerar um score automatizado de risco assistencial.
-
-Exemplos:
-
-* dor intensa;
-* febre;
-* perda importante de peso;
-* alterações funcionais;
-* bioimpedância alterada;
-* piora sintomática;
-* edema importante;
-* falta de ar.
-
-A partir da pontuação, pacientes podem ser classificadas em:
-
-* baixo risco;
-* moderado risco;
-* alto risco.
-
----
-
-# 📱 Fluxo do aplicativo
-
-1. Serviço de saúde realiza cadastro da paciente;
-2. Profissional informa tratamentos realizados;
-3. Dados clínicos e exames são inseridos;
-4. Paciente responde questionários periódicos;
-5. Plataforma realiza análise automatizada;
-6. Alertas clínicos são gerados;
-7. Equipe acompanha evolução longitudinal.
-
----
-
-# 🧪 Exames e dados integrados
-
-* Bioimpedância;
-* Colposcopia;
-* BI-RADS;
-* Ultrassonografia mamária;
-* Ultrassonografia transvaginal;
-* exames laboratoriais hormonais;
-* avaliação clínica multiprofissional.
-
----
-
-# 📚 Fundamentação científica
-
-O projeto utiliza conceitos baseados em:
-
-* PROs (Patient Reported Outcomes);
-* EORTC QLQ-C30;
-* survivorship care;
-* monitoramento remoto em oncologia;
-* sarcopenia oncológica;
-* avaliação funcional em câncer.
-
----
-
-# 🔒 Segurança e privacidade
-
-A plataforma considera princípios da LGPD:
-
-* controle de acesso;
-* armazenamento seguro;
-* confidencialidade;
-* rastreabilidade;
-* consentimento do paciente.
-
----
-
-# 🚀 MVP
-
-A primeira versão contempla:
-
-* cadastro de pacientes;
-* aplicação de questionários;
-* dashboard profissional;
-* registro de bioimpedância;
-* score automatizado;
-* alertas clínicos;
-* acompanhamento longitudinal.
-
----
-
-# 📈 Impacto esperado
-
-* melhora da continuidade do cuidado;
-* identificação precoce de complicações;
-* redução de abandono de seguimento;
-* apoio à tomada de decisão;
-* priorização assistencial;
-* melhoria da qualidade de vida das pacientes.
-
----
-
-# 🛠️ Tecnologias
-
-## Front-end
-
-* Figma
 * React
-* Next.js
+* TypeScript
+* React Router
+* Tailwind CSS
+* Recharts
 
-## Back-end
+### Backend
 
-* Supabase
-* PostgreSQL
+* Supabase (em integração)
 
-## Outras tecnologias
+### Versionamento
 
-* APIs clínicas
-* Dashboards analíticos
-* Estratificação automatizada de risco
+* GitHub
 
----
+### Prototipação e Geração Inicial
 
-# 👥 Equipe
-
-Projeto desenvolvido para hackathon de inovação em saúde com foco em oncologia e saúde digital aplicada ao SUS.
+* Figma Make
 
 ---
 
-# 📌 Status do projeto
+## Funcionalidades Implementadas
 
-🚧 Em desenvolvimento (MVP)
+### Dashboard Profissional
+
+* Indicadores gerais de pacientes.
+* Alertas clínicos.
+* Evolução clínica consolidada.
+* Distribuição de tratamentos.
+* Lista de pacientes recentes.
+
+### Gestão de Pacientes
+
+* Listagem de pacientes.
+* Busca e filtros.
+* Cadastro de novas pacientes.
+* Perfil clínico individual.
+
+### Tratamentos
+
+* Acompanhamento de protocolos.
+* Status do tratamento.
+* Evolução das sessões.
+* Registro de efeitos adversos.
+
+### Exames Laboratoriais
+
+* Visualização por categorias.
+* Comparação com valores de referência.
+* Identificação automática de resultados críticos.
+* Tendência temporal dos exames.
+
+### Sintomas e Qualidade de Vida
+
+* Avaliação multidimensional.
+* Escalas de intensidade.
+* Indicadores inspirados em instrumentos de qualidade de vida utilizados em oncologia.
+* Visualizações gráficas da evolução clínica.
+
+### Bioimpedância
+
+* Monitoramento de composição corporal.
+* Massa magra.
+* Gordura corporal.
+* Hidratação.
+* IMC.
+* Evolução temporal dos indicadores.
 
 ---
 
-# ❤️ Propósito
+## Estrutura Atual do Projeto
 
-Transformar o acompanhamento pós-tratamento oncológico em um cuidado contínuo, humanizado e inteligente.
+### Rotas Disponíveis
+
+* Dashboard
+* Pacientes
+* Novo Paciente
+* Perfil do Paciente
+* Tratamentos
+* Exames
+* Sintomas e Qualidade de Vida
+* Bioimpedância
+
+---
+
+## Status Atual
+
+### Concluído
+
+* Estrutura de navegação.
+* Interface profissional.
+* Componentização do frontend.
+* Dashboard analítico.
+* Fluxos clínicos principais.
+* Integração inicial com GitHub.
+* Integração inicial com Supabase.
+
+### Em Desenvolvimento
+
+* Persistência de dados.
+* Integração completa com Supabase.
+* CRUD real de pacientes.
+* CRUD de exames.
+* CRUD de tratamentos.
+* CRUD de avaliações clínicas.
+* Sistema de alertas automáticos.
+
+### Planejado
+
+#### Portal do Paciente
+
+* Acompanhamento individual.
+* Preenchimento remoto de questionários.
+* Visualização de evolução clínica.
+* Registro de sintomas.
+* Registro de medidas corporais.
+* Histórico de exames.
+
+#### Inteligência Clínica
+
+* Regras automatizadas de risco.
+* Estratificação de pacientes.
+* Geração automática de alertas.
+* Apoio à decisão clínica.
+
+#### Monitoramento Longitudinal
+
+* Linha do tempo completa do paciente.
+* Evolução multidimensional.
+* Indicadores preditivos.
+
+---
+
+## Visão de Futuro
+
+O OncoCare+ busca evoluir para uma plataforma capaz de integrar informações clínicas, funcionais e de qualidade de vida, oferecendo suporte ao acompanhamento contínuo de pacientes oncológicos e contribuindo para a identificação precoce de situações que demandem intervenção da equipe assistencial.
+
+---
+
+## Licença
+
+Projeto desenvolvido para fins acadêmicos, pesquisa, inovação e validação de soluções em saúde digital.
